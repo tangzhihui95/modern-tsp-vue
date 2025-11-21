@@ -1,0 +1,8 @@
+.el-input{
+    font-size:12px;
+}
+.el-select-dropdown__item{
+    font-size:12px;
+    display: flex;
+    justify-content: space-between;
+}
