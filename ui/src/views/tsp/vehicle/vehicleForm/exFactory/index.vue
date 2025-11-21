@@ -909,7 +909,8 @@ export default {
 <style lang="scss" scoped>
 .wrap {
   padding: 0 25px 0 15px;
-  /deep/ .myTable {
+  ///deep/ .myTable {
+  ::v-deep .myTable {
     /*  审查DOM也可以找到这个结构，同上  */
     .el-table__header-wrapper {
       .el-checkbox__inner {
@@ -919,7 +920,8 @@ export default {
   }
 }
 
-/deep/ .el-input--suffix .el-input__inner {
+///deep/ .el-input--suffix .el-input__inner {
+ ::v-deep .el-input--suffix .el-input__inner {
     padding-right: 10px;
 }
 

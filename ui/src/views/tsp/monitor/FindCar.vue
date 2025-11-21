@@ -335,7 +335,8 @@ export default {
     .el-tree::v-deep {
       background: rgb(243, 243, 243);
     }
-    /deep/.el-tree-node__label {
+    ///deep/ .el-tree-node__label {
+    ::v-deep .el-tree-node__label {
       font-size: 12px !important;
     }
   }
