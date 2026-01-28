@@ -7,7 +7,7 @@
             <el-input
               type="input"
               v-model="queryParams.sn"
-              placeholder="SN、SIM"
+              placeholder="SN、SIM、ICCID"
               clearable
             />
           </el-form-item>

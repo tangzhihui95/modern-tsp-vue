@@ -336,7 +336,7 @@ export default {
       background: rgb(243, 243, 243);
     }
     ///deep/ .el-tree-node__label {
-    ::v-deep .el-tree-node__label {
+     ::v-deep .el-tree-node__label {
       font-size: 12px !important;
     }
   }

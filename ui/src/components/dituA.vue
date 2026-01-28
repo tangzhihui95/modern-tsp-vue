@@ -1720,12 +1720,14 @@ export default {
     getVehicleLngLat(vin) {
       let vehicleGpsAndStatusData = this.vehicleGpsAndStatusDataMap.get(vin)
       if (this.isValidGps(vehicleGpsAndStatusData)) {
+        console.log('this.isValidGps = ' + vehicleGpsAndStatusData)
         let lnglat = new AMap.LngLat(
           vehicleGpsAndStatusData.longitude,
           vehicleGpsAndStatusData.latitude
         )
         return lnglat
-      } else {
+      } 
+      else {
         return null
       }
     },
@@ -1985,7 +1987,7 @@ export default {
       console.log('vehicleOptionClick: vin=' + vin)
 
       let lnglat = this.getVehicleLngLat(vin)
-
+      console.log('lnglat: vin=' + lnglat)
       if (lnglat != null) {
         if (
           parseInt(this.map.getZoom()) >= parseInt(this.hideMapDistClusterZoom)
